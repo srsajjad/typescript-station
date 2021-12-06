@@ -12,11 +12,12 @@ body {
 
   --body-background: #20202b;
   --card-background: #2f2f3a;
-  --header-background: #fafafa;
+  --header-background: #eeae61;
   --footer-background: #22222b;
-  --text-color: #000000;
+  --text-color: #9ca5b6;
   --card-box-shadow: #00000073 0px 35px 20px -20px;
   --white: #ffffff;
+  --text-font-size: 25px;
 }
 
 a {
