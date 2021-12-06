@@ -5,8 +5,6 @@
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--card-background);
   box-shadow: var(--card-box-shadow);
 }
