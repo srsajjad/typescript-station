@@ -8,3 +8,15 @@
   background-color: var(--card-background);
   box-shadow: var(--card-box-shadow);
 }
+
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 97%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .card {
+    height: 90%;
+  }
+}
