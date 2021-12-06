@@ -9,7 +9,9 @@ export const CardFooter = () => {
 
   return (
     <div className={card_footer}>
-      <div className={footer_title}>CURRENTLY PLAYING</div>
+      {selectedStation?.stationName && (
+        <div className={footer_title}>CURRENTLY PLAYING</div>
+      )}
       <div className={item_name}>{selectedStation?.stationName}</div>
     </div>
   );

@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid var(--divider-color);
 }
 
 .footer_title {
