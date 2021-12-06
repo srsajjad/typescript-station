@@ -1,0 +1,5 @@
+.list_item_expanded {
+  overflow: hidden;
+  display: flex;
+  transition: height 0.3s ease-in-out;
+}
