@@ -1,4 +1,6 @@
-export const data = [
+import { Station } from "constants/Station.interface";
+
+export const data: Station[] = [
   {
     frequency: "66,6",
     stationName: "Putin FM",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CardHeader, CardBody, CardFooter } from "components";
+import { CardHeader, CardBodyContainer, CardFooter } from "components";
 import styles from "./Card.module.css";
 
 export const Card = () => {
@@ -8,7 +8,7 @@ export const Card = () => {
   return (
     <div className={card}>
       <CardHeader />
-      <CardBody />
+      <CardBodyContainer />
       <CardFooter />
     </div>
   );

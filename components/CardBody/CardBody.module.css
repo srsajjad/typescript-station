@@ -11,3 +11,13 @@
 .card_body::-webkit-scrollbar {
   width: 3px;
 }
+
+.card_body_loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+  color: var(--text-color);
+}

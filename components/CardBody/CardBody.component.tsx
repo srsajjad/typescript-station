@@ -1,10 +1,17 @@
 import React from "react";
 import styles from "./CardBody.module.css";
-import { data } from "constants/data";
 import { ListItem } from "components";
+import { Station } from "constants/Station.interface";
 
-export const CardBody = () => {
-  const { card_body } = styles;
+interface CardBodyProps {
+  data: Station[];
+  loading: boolean;
+}
+
+export const CardBody = ({ data, loading }: CardBodyProps) => {
+  const { card_body, card_body_loading } = styles;
+
+  if (loading) return <div className={card_body_loading}>Loading...</div>;
 
   return (
     <div className={card_body}>
