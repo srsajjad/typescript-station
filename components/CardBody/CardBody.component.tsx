@@ -14,7 +14,7 @@ export const CardBody = ({ data, loading }: CardBodyProps) => {
   if (loading) return <div className={card_body_loading}>Loading...</div>;
 
   return (
-    <div className={card_body}>
+    <div className={card_body} data-testid="card-body">
       {data.map((station) => (
         <ListItem key={station.frequency} station={station} />
       ))}

@@ -12,7 +12,9 @@ export const CardFooter = () => {
       {selectedStation?.stationName && (
         <div className={footer_title}>CURRENTLY PLAYING</div>
       )}
-      <div className={item_name}>{selectedStation?.stationName}</div>
+      <div className={item_name} data-testid="card-footer-item-name">
+        {selectedStation?.stationName}
+      </div>
     </div>
   );
 };

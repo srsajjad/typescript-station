@@ -25,7 +25,11 @@ export const ListItem = ({ station }: ListItemProps) => {
   };
 
   return (
-    <div onClick={handleItemClick} className={list_item}>
+    <div
+      onClick={handleItemClick}
+      className={list_item}
+      data-testid="list-item"
+    >
       <div
         style={{
           visibility: isClicked ? "visible" : "hidden",
@@ -33,6 +37,7 @@ export const ListItem = ({ station }: ListItemProps) => {
           marginBottom: isClicked ? "20px" : "0px",
         }}
         className={list_item_expanded}
+        data-testid="list-item-expanded"
       >
         <button onClick={(e) => e.stopPropagation()}>
           <IconCirclePlus size={35} />
